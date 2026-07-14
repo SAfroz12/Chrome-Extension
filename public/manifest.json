@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+
+  "name": "Resume JD Matcher",
+  "version": "1.0",
+
+  "description": "Compare selected Job Description with stored Resume",
+
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Resume Matcher"
+  },
+
+  "background": {
+    "service_worker": "background.js",
+    "type" :"module"
+  },
+
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+
+  "host_permissions": [
+    "https://*/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
