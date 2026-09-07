@@ -8,6 +8,8 @@ This project is a Chrome browser extension developed with React and Vite. It dem
 
 The project is designed to be easily extended with additional features and Chrome Extension APIs.
 
+## Demo 
+https://drive.google.com/file/d/17L-sT7ZTvZScQtHQyJLzOhvXDHqmBPRa/view
 ##  Features
 
 *  Built with React and Vite
